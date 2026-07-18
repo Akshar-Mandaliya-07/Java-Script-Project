@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Digital Clock</title>
+</head>
+<body style="background-color: #212121; color: white;">
+          <div id="myDiv" style="margin-left: 300px;margin-top: 150px;">
+
+          </div>
+</body>
+<script>
+          const date = document.getElementById("myDiv")
+          setInterval( function() {
+                    let MyDate = new Date()
+                    // console.log(MyDate.toLocaleTimeString())
+                    date.innerHTML = MyDate.toLocaleTimeString()
+          } , 1000)
+</script>
+</html>
